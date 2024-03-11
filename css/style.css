@@ -277,3 +277,8 @@ footer nav a {
 footer a:hover {
 	color: #3ff252;
 }
+
+footer .company-info p {
+	margin: 5px 0px;
+	color: #fff;
+}
