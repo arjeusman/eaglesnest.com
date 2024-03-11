@@ -7,9 +7,14 @@ body {
 	font-size: 20px;
 }
 
-/* body::-webkit-scrollbar {
-	display: none;
-} */
+body::-webkit-scrollbar {
+	width: 10px;
+	background-color: #ddd;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0c359e;
+}
 
 img {
 	max-width: 100%;
@@ -60,7 +65,7 @@ h6 {
 	text-align: center;
 }
 
-.navbar .nav-item .nav-link:hover {
+.navbar .nav-item:hover .nav-link {
 	color: #3ff252;
 }
 
@@ -84,9 +89,10 @@ h6 {
 	max-width: 300px;
 	min-width: 200px;
 	background: #fff;
-	padding: 10px;
+	padding: 10px 0px;
 	margin: 5px 0px;
 	border-radius: 5px;
+	transition: all linear .2s;
 }
 
 .navbar .nav-item .hover-dropdown::before {
@@ -101,15 +107,17 @@ h6 {
 }
 
 .navbar .nav-item .hover-dropdown * {
-	color: #222831;
+	color: #060630;
 	display: block;
-	margin: 4px 0px;
+	padding: 8px 10px;
 	line-height: normal;
 	font-size: 14px;
+	transition: all linear .3s;
 }
 
 .navbar .nav-item .hover-dropdown *:hover {
-	color: #124076;
+	color: #3ff252;
+	background-color: #060630;
 }
 
 .navbar-toggler {
@@ -145,7 +153,7 @@ h6 {
 	height: 100%;
 	max-width: 50%;
 	padding: 0px 120px;
-	background: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent);
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), transparent);
 }
 
 .hero .frame .call-to-action h2 {
@@ -229,8 +237,15 @@ footer h1 {
 	font-size: 18px;
 }
 
-footer nav a {
+footer a {
 	color: #fff;
+}
+
+footer nav a {
 	display: block;
-	margin: 4px 0px;
+	margin: 5px 0px;
+}
+
+footer a:hover {
+	color: #3ff252;
 }
