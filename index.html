@@ -4,411 +4,482 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>OWEB-EMS</title>
+	<title>Eagles' Nest</title>
 	<link rel="stylesheet" href="css/bootstrap.theme.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 	<link rel="stylesheet" href="css/style.css" />
-	<link rel="icon" href="favicon.png">
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </head>
 
-<body class="d-flex justify-content-center">
-	<div class="continer-fluid p-0 m-0">
-		<nav class="navbar navbar-expand-lg navbar-light">
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-lg">
+		<div class="container">
+			<a class="navbar-brand" href="./">
+				<img src="images/logo.png" alt="Eagles Nest" />
+			</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="#">Coliving Homes</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Coliving</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Renters Insurance</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Investment</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Company</a>
+						<div class="hover-dropdown">
+							<a href="#">Who we are</a>
+							<a href="#">FAQ</a>
+							<a href="#">Blog</a>
+							<a href="#">For Landlords</a>
+							<a href="#">Testimonials</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">More</a>
+						<div class="hover-dropdown">
+							<a href="#">Student Housing</a>
+							<a href="#">Intern Housing</a>
+							<a href="#">Corporate Housing</a>
+							<a href="#">Short-Term Rentals</a>
+							<a href="#">Month-to-Month Rentals</a>
+						</div>
+					</li>
+				</ul>
+				<a href="#" class="btn bg-gradient get-offer p-2 px-4 d-none d-md-inline-block">Get offer <i class="bi-arrow-right"></i></a>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<section class="splide hero">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide frame">
+						<img src="images/slides/Frame-1.jpg" alt="">
+						<div class="call-to-action">
+							<h2>Monthly shared apartments in New York</h2>
+							<a href="#" class="btn btn-lg bg-gradient get-offer">Get offer</a>
+						</div>
+					</li>
+					<li class="splide__slide frame">
+						<img src="images/slides/Frame-2.jpg" alt="">
+						<div class="call-to-action">
+							<h2>Less paper work, more flexibility. No credit check</h2>
+							<a href="#" class="btn btn-lg bg-gradient get-offer">Get offer</a>
+						</div>
+					</li>
+					<li class="splide__slide frame">
+						<img src="images/slides/Frame-3.jpg" alt="">
+						<div class="call-to-action">
+							<h2>Coliving ready-to-move-in even today</h2>
+							<a href="#" class="btn btn-lg bg-gradient get-offer">Get offer</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section style="background-color: #0C359E;" class="py-3 text-white">
 			<div class="container">
-				<a class="navbar-brand" href="./">
-					<img src="themes/ems-logo-colored.png" alt="OWEB-EMS Logo" style="width: 50px" />
-				</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="#home"><i class="bi-house"></i> Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#about"><i class="bi-info-circle"></i> About</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#features"><i class="bi-stars"></i> Features</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#pricing"><i class="bi-tags"></i> Pricing</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#faq"><i class="bi-question-circle"></i> FAQ</a>
-						</li>
-					</ul>
-					<a href="#pricing" class="btn bg-gradient rounded-pill get-started p-2 px-4 d-none d-md-inline-block">Get started <i class="bi-arrow-right"></i></a>
+				<div class="row">
+					<div class="col-sm-12 col-md-3 my-4 my-md-0 text-center">
+						<span class="fs-4">2000+</span>
+						<b class="d-block">Applications per month</b>
+					</div>
+					<div class="col-sm-12 col-md-3 my-4 my-md-0 text-center">
+						<span class="fs-4">8000+</span>
+						<b class="d-block">Happy Residents</b>
+					</div>
+					<div class="col-sm-12 col-md-3 my-4 my-md-0 text-center">
+						<span class="fs-4">700.000+</span>
+						<b class="d-block">Nights has been sold</b>
+					</div>
+					<div class="col-sm-12 col-md-3 my-4 my-md-0 text-center">
+						<span class="fs-4">800+</span>
+						<b class="d-block">Beds in portfolio</b>
+					</div>
 				</div>
 			</div>
-		</nav>
-		<div id="home" class="hero row align-items-center py-2">
-			<div class="col-sm-12 col-md-5">
-				<div class="d-flex align-items-center justify-content-center">
-					<img class="d-none d-md-block" src="themes/ems-logo-colored.png" alt="OWEB-EMS Logo" />
+		</section>
+		<section class="container">
+			<div class="row align-items-center py-5">
+				<div class="col-sm-12 col-md-8 intro py-3">
+					<h1 class="title">Best coliving spaces in NYC!</h1>
+					<h4 class="fs-3" style="font-family: 'Times New Roman', Times, serif;">Hi, we’re Eagle's Nest! The easiest Coliving spaces in New York. Come Live with us!</h4>
+					<p>We are your new best friend who helps with the right housing option for your short term stay or long term stay in New York. Fully furnished apartments with equipped kitchens, great living rooms, unlimited access to gyms and coworking spaces around NYC, like-minded friendly community with regular events, and one all-inclusive price – it’s all Eagle's Nest. It’s your new home in New York!</p>
+					<p>Co-living spaces at Eagle's Nest. Come stay with us and feel at home.</p>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<img src="images/logo-original.png" class="rounded-3">
 				</div>
 			</div>
-			<div class="col-sm-12 col-md-6 px-3 py-4 py-md-0">
-				<div class="text-start">
-					<h1 class="text-black fs-1">OWEB-EMS</h1>
-					<h4 class="text-black fs-4">Empowering Enrollment Management with Efficiency and Ease.</h4>
-					<div>OWEB-EMS (Online Web-based Enrollment Management System) revolutionizes enrollment management, offering a seamless digital platform to streamline tasks effortlessly.</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-6">
+					<div class="features">
+						<video src="images/videos/video-1.mp4" loop autoplay></video>
+						<div class="p-4">
+							<h1>Flexibility</h1>
+							<p>We offer flexible short and long term leases and you can move in or move out any day of the month.</p>
+						</div>
+					</div>
 				</div>
-				<div class="d-flex flex-column flex-md-row gap-2 py-3">
-					<a href="#demo" class="btn btn-lg bg-gradient pricing rounded-pill"><i class="bi-box-arrow-down-left"></i> Demo</a>
-					<a href="#pricing" class="btn btn-lg bg-gradient get-started rounded-pill">Get started <i class="bi-arrow-right"></i></a>
+				<div class="col-sm-12 col-md-6">
+					<div class="features">
+						<video src="images/videos/video-2.mp4" loop autoplay></video>
+						<div class="p-4">
+							<h1>Fully furnished</h1>
+							<p>We offer private and apportioned apartments in fully furnished modern homes in convenient locations in New York City. Just bring your suitcase.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 py-2">
+					<div class="features" style="background-color: #272c58;">
+						<video src="images/videos/video-3.mp4" loop autoplay></video>
+						<div class="p-4 text-white">
+							<h1 class="text-white">All-inclusive price!</h1>
+							<p>No hefty security deposit, no utility bills, no hookup fees, no application fee, no brokers fee.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="features">
+						<video src="images/videos/video-4.mp4" loop autoplay></video>
+						<div class="p-4">
+							<h1>Weekly cleaning</h1>
+							<p>We've taken the work out of living well and staying healthy in the City. Our weekly cleanings are included in the all-in-one affordable price.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="features">
+						<video src="images/videos/video-5.mp4" loop autoplay></video>
+						<div class="p-4">
+							<h1>Diverse community</h1>
+							<p>We are entrepreneurs, digital nomads, students, interns, corporate execs, travelers — everyone looking for easy living and a place to feel at home.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="location" class="container-fluid">
+			<div class="row align-items-center location py-5">
+				<div class="col-sm-12 col-md-7">
+					<h1>New York</h1>
+					<h2 class="w-75">Come meet your tribe and enjoy the feeling of community.</h2>
+				</div>
+				<div class="col-sm-12 col-md-5">
+					<p class="fs-5 w-75">Beautiful furniture, designer touches, comfy beds and spacious rooms and bathrooms make it easy to relax and rest so that you feel at home. Hassle free, affordable and easy rental processes make SharedEasy the solution for renting in the big city.</p>
+				</div>
+			</div>
+		</section>
+		<section id="location1" class="splide">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide">
+						<img src="images/places/1.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">(Test) Pratt Bedford Home</h1>
+							<p class="fs-5">Private rooms from $1350<br>No Membership Fee!</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<img src="images/places/2.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">(Test) Pratt Bedford Home</h1>
+							<p class="fs-5">Private rooms from $1350<br>No Membership Fee!</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<img src="images/places/3.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">(Test) Pratt Bedford Home</h1>
+							<p class="fs-5">Private rooms from $1350<br>No Membership Fee!</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<img src="images/places/4.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">(Test) Pratt Bedford Home</h1>
+							<p class="fs-5">Private rooms from $1350<br>No Membership Fee!</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<img src="images/places/5.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">(Test) Pratt Bedford Home</h1>
+							<p class="fs-5">Private rooms from $1350<br>No Membership Fee!</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<img src="images/places/6.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">(Test) Pratt Bedford Home</h1>
+							<p class="fs-5">Private rooms from $1350<br>No Membership Fee!</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<img src="images/places/7.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">(Test) Pratt Bedford Home</h1>
+							<p class="fs-5">Private rooms from $1350<br>No Membership Fee!</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<img src="images/places/8.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">(Test) Pratt Bedford Home</h1>
+							<p class="fs-5">Private rooms from $1350<br>No Membership Fee!</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<img src="images/places/9.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">(Test) Pratt Bedford Home</h1>
+							<p class="fs-5">Private rooms from $1350<br>No Membership Fee!</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<img src="images/places/10.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">(Test) Pratt Bedford Home</h1>
+							<p class="fs-5">Private rooms from $1350<br>No Membership Fee!</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<img src="images/places/11.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">(Test) Pratt Bedford Home</h1>
+							<p class="fs-5">Private rooms from $1350<br>No Membership Fee!</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<img src="images/places/12.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">(Test) Pratt Bedford Home</h1>
+							<p class="fs-5">Private rooms from $1350<br>No Membership Fee!</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<img src="images/places/13.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">(Test) Pratt Bedford Home</h1>
+							<p class="fs-5">Private rooms from $1350<br>No Membership Fee!</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<img src="images/places/14.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">(Test) Pratt Bedford Home</h1>
+							<p class="fs-5">Private rooms from $1350<br>No Membership Fee!</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<img src="images/places/15.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">(Test) Pratt Bedford Home</h1>
+							<p class="fs-5">Private rooms from $1350<br>No Membership Fee!</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="location" class="container-fluid">
+			<div class="row align-items-center location py-5">
+				<div class="col-sm-12 col-md-7">
+					<h1>Los Angeles</h1>
+					<h2 class="w-75">Come meet your tribe and enjoy the feeling of community.</h2>
+				</div>
+				<div class="col-sm-12 col-md-5">
+					<p class="fs-5 w-75">Beautiful furniture, designer touches, comfy beds and spacious rooms and bathrooms make it easy to relax and rest so that you feel at home. Hassle free, affordable and easy rental processes make SharedEasy the solution for renting in the big city.</p>
+				</div>
+			</div>
+		</section>
+		<section id="location2" class="splide">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide">
+						<img src="images/places/16.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">Mid City</h1>
+							<p class="fs-5">Find your home in Mid City! Rent a Room in great neighborhood from $749/month.</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<img src="images/places/17.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">2616 South Manhattan Place</h1>
+							<p class="fs-5">Find a home in 2616 South Manhattan Place: The best Coliving Experience you will ever find in LA!</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<img src="images/places/18.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">Hollywood Carlos</h1>
+							<p class="fs-5">Find your home in Hollywood Carlos! Rent a Room in great​ ​neighborhood from $749/month.</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<img src="images/places/19.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">Hollywood Afton</h1>
+							<p class="fs-5">Find a home in Hollywood Afton: The best Coliving Experience you will ever find in LA!</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<img src="images/places/20.webp" alt="">
+						<div class="my-2">
+							<h1 class="fs-3">West LA</h1>
+							<p class="fs-5">Find a home in West LA. The best Coliving Experience you will ever find in LA!</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="location" class="bg-body bg-gradient my-3">
+			<div class="container">
+				<div class="row align-items-center location py-5">
+					<div class="col-sm-12 col-md-7">
+						<h1 class="fs-3 text-center text-md-start">Need help with the selection?</h1>
+					</div>
+					<div class="col-sm-12 col-md-5 text-center">
+						<a href="#" class="btn btn-dark btn-lg bg-gradient px-5">Fill the form</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="banner py-5">
+			<div class="container">
+				<h1>Unique perks! Live well, work smart, have fun along the way. We've covered everything!</h1>
+				<p>All members receive unlimited on-demand fitness and monthly credits for entry to 200+ premier studios. Grow your business and expand your network with unlimited access to co-working spaces, as well as invites to networking events and happy hours.</p>
+				<a href="" class="btn btn-lg btn-warning bg-gradient px-5 rounded-0">Get offer</a>
+			</div>
+		</section>
+		<section class="container my-4">
+			<div class="row">
+				<div class="col-sm-12 col-md-6 p-3 py-2">
+					<div class="row align-items-center testimonials p-4 rounded-2 shadow shadow-lg">
+						<div class="col-sm-12 col-md-4 text-start text-md-center">
+							<img src="images/testimonials/1.webp" alt="">
+						</div>
+						<div class="col-sm-12 col-md-8">
+							<small>Testimonial:</small>
+							<h2>Everything was top standard!</h2>
+							<p>Everything was top standard, nothing cause any troubles! The home throought was clean and well maintained. I stayed there for a month in shared room. Overall I would highly recommend!</p>
+							<span>~ Andrea</span>
+							<small class="d-block fs-6">Medical Intern from Dubai</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 p-3 py-2">
+					<div class="row align-items-center testimonials p-4 rounded-2 shadow shadow-lg">
+						<div class="col-sm-12 col-md-4 text-start text-md-center">
+							<img src="images/testimonials/2.webp" alt="">
+						</div>
+						<div class="col-sm-12 col-md-8">
+							<small>Testimonial:</small>
+							<h2>Everything was top standard!</h2>
+							<p>Everything was top standard, nothing cause any troubles! The home throought was clean and well maintained. I stayed there for a month in shared room. Overall I would highly recommend!</p>
+							<span>~ Nancy</span>
+							<small class="d-block fs-6">Medical Intern from Dubai</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 p-3 py-2">
+					<div class="row align-items-center testimonials p-4 rounded-2 shadow shadow-lg">
+						<div class="col-sm-12 col-md-4 text-start text-md-center">
+							<img src="images/testimonials/3.webp" alt="">
+						</div>
+						<div class="col-sm-12 col-md-8">
+							<small>Testimonial:</small>
+							<h2>Everything was top standard!</h2>
+							<p>Everything was top standard, nothing cause any troubles! The home throought was clean and well maintained. I stayed there for a month in shared room. Overall I would highly recommend!</p>
+							<span>~ James</span>
+							<small class="d-block fs-6">Medical Intern from Dubai</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 p-3 py-2">
+					<div class="row align-items-center testimonials p-4 rounded-2 shadow shadow-lg">
+						<div class="col-sm-12 col-md-4 text-start text-md-center">
+							<img src="images/testimonials/4.webp" alt="">
+						</div>
+						<div class="col-sm-12 col-md-8">
+							<small>Testimonial:</small>
+							<h2>Everything was top standard!</h2>
+							<p>Everything was top standard, nothing cause any troubles! The home throought was clean and well maintained. I stayed there for a month in shared room. Overall I would highly recommend!</p>
+							<span>~ Jane</span>
+							<small class="d-block fs-6">Medical Intern from Dubai</small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-sm-12 col-md-3 col-lg-2 my-3 px-4 px-md-0">
+					<h1>Menu 1</h1>
+					<nav>
+						<a href="#">Who we are</a>
+						<a href="#">Coliving</a>
+						<a href="#">FAQ</a>
+						<a href="#">Blog</a>
+						<a href="#">No Fee Apartments</a>
+					</nav>
+				</div>
+				<div class="col-sm-12 col-md-3 col-lg-2 my-3 px-4 px-md-0">
+					<h1>Menu 2</h1>
+					<nav>
+						<a href="#">For Landlords</a>
+						<a href="#">Privacy Policy</a>
+						<a href="#">Contact Us</a>
+						<a href="#">Terms of use</a>
+					</nav>
+				</div>
+				<div class="col-sm-12 col-md-4 col-lg-4 my-3 px-4 px-md-0">
+					<h1>Menu 3</h1>
+					<nav>
+						<a href="#">Corporate Housing in NYC</a>
+						<a href="#">Furnished Rooms for rent, NYC</a>
+						<a href="#">Off Campus Student Housing, NYC</a>
+						<a href="#">Rooms for Rent in Brooklyn</a>
+						<a href="#">Month-to-Month Rentals</a>
+						<a href="#">Furnished Short Term Rentals in NYC</a>
+					</nav>
+				</div>
+				<div class="col-sm-12 col-md-4 col-lg-4 my-3 px-4 px-md-0">
+					<h1>Menu 4</h1>
+					<nav>
+						<a href="#">Facebook</a>
+						<a href="#">Twitter</a>
+						<a href="#">YouTube</a>
+						<a href="#">Instagram</a>
+						<a href="#">LinkedIn</a>
+						<a href="#">Threads</a>
+					</nav>
 				</div>
 			</div>
 		</div>
-
-		<div class="position-relative">
-			<div class="custom-shape-divider-top-1708106494">
-				<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-					<path
-						d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-						class="shape-fill"></path>
-				</svg>
-			</div>
-		</div>
-
-		<main class="container-fluid">
-			<section id="about" class="row align-items-center py-3">
-				<div class="col-sm-12 col-md-6">
-					<div class="d-flex align-items-center gap-2">
-						<h1 class="text-black fs-2 m-0"><i class="bi-info-circle"></i> What is</h1>
-						<img src="themes/ems-logo-black.png" alt="OWEB-EMS Logo" style="width: 40px" />
-						<h1 class="text-black fs-2 m-0">?</h1>
-					</div>
-					<p class="py-3 pe-md-5">
-						OWEB-EMS (Online Web-based Enrollment Management System) revolutionizes enrollment management, offering a seamless digital platform to streamline tasks effortlessly. OWEB-EMS simplifies
-						every step, empowering administrators and users alike with intuitive features for efficient enrollment management. Say goodbye to paperwork and hello to a smoother, more accessible
-						enrollment management experience!
-					</p>
-				</div>
-				<div class="col-sm-12 col-md-6">
-					<div class="stacks overflow-x-hidden">
-						<div id="theme1" class="item" style="--data-color: #fff"></div>
-						<div id="theme2" class="item" style="--data-color: #181d2f"></div>
-						<div id="theme3" class="item" style="--data-color: #153d77"></div>
-						<div id="theme4" class="item" style="--data-color: #203a45"></div>
-					</div>
-				</div>
-			</section>
-			<section class="row py-5">
-				<div class="col-sm-12 col-md-3">
-					<div class="feature d-flex align-items-center justify-content-center flex-row flex-nowrap gap-2" style="--data-color: #555">
-						<img src="themes/ems-logo-white.png" alt="" />
-						<b class="fs-2 m-0 d-block" style="color: #fff">Light</b>
-						<img src="./themes/captures/theme-capture-light.png" alt="OWEB-EMS Theme" class="popup" />
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-3">
-					<div class="feature d-flex align-items-center justify-content-center flex-row flex-nowrap gap-2" style="--data-color: #181d2f">
-						<img src="themes/ems-logo-dark.png" alt="" />
-						<b class="fs-2 m-0 d-block" style="color: #181d2f">Dark</b>
-						<img src="./themes/captures/theme-capture-dark.png" alt="OWEB-EMS Theme" class="popup" />
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-3">
-					<div class="feature d-flex align-items-center justify-content-center flex-row flex-nowrap gap-2" style="--data-color: #153d77">
-						<img src="themes/ems-logo-modern.png" alt="" />
-						<b class="fs-2 m-0 d-block" style="color: #153d77">Modern</b>
-						<img src="./themes/captures/theme-capture-modern.png" alt="OWEB-EMS Theme" class="popup" />
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-3">
-					<div class="feature d-flex align-items-center justify-content-center flex-row flex-nowrap gap-2" style="--data-color: #203a45">
-						<img src="themes/ems-logo-classic.png" alt="" />
-						<b class="fs-2 m-0 d-block" style="color: #203a45">Classic</b>
-						<img src="./themes/captures/theme-capture-classic.png" alt="OWEB-EMS Theme" class="popup" />
-					</div>
-				</div>
-			</section>
-			<section id="features" class="row py-3">
-
-				<div class="col-sm-12 col-md-6">
-					<h1 class="fs-1"><i class="bi-stars"></i> Features</h1>
-					<p class="text-body-secondary m-0 my-3" style="text-align: justify;">Welcome to OWEB-EMS, your comprehensive School Enrollment Management System designed to streamline the enrollment process and enhance administrative efficiency. At OWEB-EMS, we understand the complexities involved in managing student enrollment, and that's why we've developed a robust platform equipped with a myriad of features tailored to meet the unique needs of educational institutions. From simplifying registration procedures to facilitating seamless communication between administrators, parents, and students, OWEB-EMS empowers schools to optimize enrollment workflows and focus on delivering exceptional educational experiences.</p>
-					<p class="text-body-secondary m-0 my-3" style="text-align: justify;">With OWEB-EMS, administrators gain access to a suite of intuitive tools that automate enrollment tasks, track student data, and generate insightful reports to inform decision-making. Parents and students benefit from a user-friendly interface that offers convenient online registration, real-time updates on application statuses, and easy access to important documents. Whether you're managing admissions for a small private school or a large university, OWEB-EMS provides the scalability and flexibility to adapt to your institution's evolving needs while fostering a collaborative environment conducive to student success.</p>
-				</div>
-
-				<div class="col-sm-12 col-md-6">
-					<div class="row">
-						<div class="col-sm-12 bg-body bg-gradient bg-opacity-25 rounded-3 shadow-lg my-1">
-							<div class="row px-md-2 py-2">
-								<div class="col-sm-12 col-md-2 d-flex align-items-center justify-content-md-center">
-									<img src="themes/icons/menu.png" alt="" style="width: 80px;">
-								</div>
-								<div class="col-sm-12 col-md-10 py-2">
-									<h4 class="fs-4 m-0">Dashboard</h4>
-									<p class="m-0">A comprehensive overview of key metrics and insights, empowering users to optimize their workflow effortlessly.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-12 bg-body bg-gradient bg-opacity-25 rounded-3 shadow-lg my-1">
-							<div class="row px-md-2 py-2">
-								<div class="col-sm-12 col-md-2 d-flex align-items-center justify-content-md-center">
-									<img src="themes/icons/paint-palette.png" alt="" style="width: 80px;">
-								</div>
-								<div class="col-sm-12 col-md-10 py-2">
-									<h4 class="fs-4 m-0">Themes</h4>
-									<p class="m-0">Explore our OWEB-EMS's theme feature, offering a vibrant array of colors to suit your style.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-12 bg-body bg-gradient bg-opacity-25 rounded-3 shadow-lg my-1">
-							<div class="row px-md-2 py-2">
-								<div class="col-sm-12 col-md-2 d-flex align-items-center justify-content-md-center">
-									<img src="themes/icons/population.png" alt="" style="width: 80px;">
-								</div>
-								<div class="col-sm-12 col-md-10 py-2">
-									<h4 class="fs-4 m-0">Sections</h4>
-									<p class="m-0">Effortlessly manage student profiles and track progress with a user-friendly interface designed to streamline academic administration.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-12 bg-body bg-gradient bg-opacity-25 rounded-3 shadow-lg my-1">
-							<div class="row px-md-2 py-2">
-								<div class="col-sm-12 col-md-2 d-flex align-items-center justify-content-md-center">
-									<img src="themes/icons/gear.png" alt="" style="width: 80px;">
-								</div>
-								<div class="col-sm-12 col-md-10 py-2">
-									<h4 class="fs-4 m-0">Management</h4>
-									<p class="m-0">Simplifies user administration, empowering organizations to manage their digital ecosystem with ease.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-12 bg-body bg-gradient bg-opacity-25 rounded-3 shadow-lg my-1">
-							<div class="row px-md-2 py-2">
-								<div class="col-sm-12 col-md-2 d-flex align-items-center justify-content-md-center">
-									<img src="themes/icons/web-maintenance.png" alt="" style="width: 80px;">
-								</div>
-								<div class="col-sm-12 col-md-10 py-2">
-									<h4 class="fs-4 m-0">Maintenance</h4>
-									<p class="m-0">Simplifies database management, allowing users to focus on their core tasks with confidence.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="demo" class="row justify-content-md-center py-5">
-				<div class="col-sm-12 my-3">
-					<h1 class="text-black fs-2 m-0 text-center">A Demo?</h1>
-				</div>
-				<div class="col-sm-12 col-md-5 text-center">
-					<p>Experience the power of OWEB-EMS firsthand with our interactive demo, where you can explore its robust features and intuitive interface. Take control and discover how OWEB-EMS can streamline your operations and elevate efficiency like never before.</p>
-					<a style="width: 200px;" target="_blank" href="https://oweb-ems.arjeusman.dev/signin?demo=true" class="btn btn-lg bg-gradient get-started active-button rounded-pill py-2">Book a Demo <i class="bi-box-arrow-up-right"></i></a>
-				</div>
-			</section>
-			<section id="pricing" class="row align-items-end justify-content-center py-3">
-				<div class="col-sm-12 py-3">
-					<h1 class="text-black fs-2 m-0 text-center">Get Started</h1>
-				</div>
-				<div class="col-sm-12 col-md-3">
-					<div class="price rounded-3 shadow-lg">
-						<h1 class="heading">Free</h1>
-						<div class="d-flex flex-row align-items-center justify-content-center py-2">
-							<h2>&#8369;0</h2>
-							<span>/month</span>
-						</div>
-						<div class="text-center px-4">
-							<span class="d-block fw-bolder">3 Months Free Trial</span>
-							<p>Setup OWEB-EMS in one click and try it FREE for 3 months.</p>
-						</div>
-						<div class="d-flex justify-content-center py-2">
-							<a target="_blank" href="https://oweb-ems.arjeusman.dev/signin?demo=true" class="btn btn-lg bg-gradient active-button rounded-pill">Try Now <i class="bi-arrow-right"></i></a>
-						</div>
-						<div class="position-relative">
-							<div class="custom-shape-divider-bottom-1708445011">
-								<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-									<path
-										d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-										class="shape-fill"></path>
-								</svg>
-							</div>
-						</div>
-						<div class="listgroup">
-							<b class="fw-bolder">Features</b>
-							<div class="listgroup-item"><i class="bi-info-circle info" data-info="Explore our OWEB-EMS's theme feature, offering a vibrant array of colors to suit your style."></i> Dashboard</div>
-							<div class="listgroup-item"><i class="bi-info-circle info" data-info="Explore our OWEB-EMS's theme feature, offering a vibrant array of colors to suit your style."></i> Themes</div>
-							<div class="listgroup-item"><i class="bi-info-circle info" data-info="Effortlessly manage student profiles and track progress with a user-friendly interface designed to streamline academic administration."></i> Sections</div>
-							<div class="listgroup-item"><i class="bi-info-circle info" data-info="Simplifies user administration, empowering organizations to manage their digital ecosystem with ease."></i> Management</div>
-							<div class="listgroup-item"><i class="bi-info-circle info" data-info="Simplifies database management, allowing users to focus on their core tasks with confidence."></i> Maintenance</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-3">
-					<div class="price rounded-3 shadow-lg">
-						<h1 class="heading py-3">Standard</h1>
-						<div class="d-flex flex-row align-items-center justify-content-center py-2">
-							<h2>&#8369;1k</h2>
-							<span>/month</span>
-						</div>
-						<div class="text-center px-4">
-							<span class="d-block fw-bolder">+3 Months Free</span>
-							<p>Subscribe to this Standard plan and get 3 months of subscription for free!</p>
-						</div>
-						<div class="d-flex justify-content-center py-2">
-							<a href="https://oweb-ems.arjeusman.dev/signin?demo=true" class="btn btn-lg bg-gradient get-started rounded-pill">Subscribe <i class="bi-arrow-right"></i></a>
-						</div>
-
-						<div class="position-relative">
-							<div class="custom-shape-divider-bottom-1708445011">
-								<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-									<path
-										d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-										class="shape-fill"></path>
-								</svg>
-							</div>
-						</div>
-						<div class="listgroup">
-							<b class="fw-bolder">Features</b>
-							<div class="listgroup-item"><i class="bi-info-circle info" data-info="Explore our OWEB-EMS's theme feature, offering a vibrant array of colors to suit your style."></i> Dashboard</div>
-							<div class="listgroup-item"><i class="bi-info-circle info" data-info="Explore our OWEB-EMS's theme feature, offering a vibrant array of colors to suit your style."></i> Themes</div>
-							<div class="listgroup-item"><i class="bi-info-circle info" data-info="Effortlessly manage student profiles and track progress with a user-friendly interface designed to streamline academic administration."></i> Sections</div>
-							<div class="listgroup-item"><i class="bi-info-circle info" data-info="Simplifies user administration, empowering organizations to manage their digital ecosystem with ease."></i> Management</div>
-							<div class="listgroup-item"><i class="bi-info-circle info" data-info="Simplifies database management, allowing users to focus on their core tasks with confidence."></i> Maintenance</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-3">
-					<div class="price rounded-3 shadow-lg">
-						<h1 class="heading">Premium</h1>
-						<div class="d-flex flex-row align-items-center justify-content-center py-2">
-							<h2>&#8369;2k</h2>
-							<span>/month</span>
-						</div>
-						<div class="text-center px-4">
-							<span class="d-block fw-bolder">+6 Months Free</span>
-							<p>Subscribe to this Premium plan and get 6 months of subscription for free!</p>
-						</div>
-						<div class="d-flex justify-content-center py-2">
-							<a href="https://oweb-ems.arjeusman.dev/signin?demo=true" class="btn btn-lg bg-gradient get-started rounded-pill">Subscribe <i class="bi-arrow-right"></i></a>
-						</div>
-
-						<div class="position-relative">
-							<div class="custom-shape-divider-bottom-1708445011">
-								<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-									<path
-										d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-										class="shape-fill"></path>
-								</svg>
-							</div>
-						</div>
-						<div class="listgroup">
-							<b class="fw-bolder">Features</b>
-							<div class="listgroup-item"><i class="bi-info-circle info" data-info="Explore our OWEB-EMS's theme feature, offering a vibrant array of colors to suit your style."></i> Dashboard</div>
-							<div class="listgroup-item"><i class="bi-info-circle info" data-info="Explore our OWEB-EMS's theme feature, offering a vibrant array of colors to suit your style."></i> Themes</div>
-							<div class="listgroup-item"><i class="bi-info-circle info" data-info="Effortlessly manage student profiles and track progress with a user-friendly interface designed to streamline academic administration."></i> Sections</div>
-							<div class="listgroup-item"><i class="bi-info-circle info" data-info="Simplifies user administration, empowering organizations to manage their digital ecosystem with ease."></i> Management</div>
-							<div class="listgroup-item"><i class="bi-info-circle info" data-info="Simplifies database management, allowing users to focus on their core tasks with confidence."></i> Maintenance</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="faq" class="row justify-content-center py-2">
-				<div class="col-sm-12 my-3">
-					<h1 class="text-black fs-2 m-0 text-center">Frequently Asked Question</h1>
-				</div>
-				<div class="col-sm-12 col-md-7 accordion shadow-lg" id="accordion">
-					<div class="accordion-item">
-						<h2 class="accordion-header">
-							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
-								What is OWEB-EMS?
-							</button>
-						</h2>
-						<div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordion">
-							<div class="accordion-body">
-								OWEB-EMS is a comprehensive web-based platform designed for effective enrollment management and student management.
-							</div>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<h2 class="accordion-header">
-							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapseOne">
-								How much is the subscription?
-							</button>
-						</h2>
-						<div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordion">
-							<div class="accordion-body">
-								Subscription costs may vary depending on the selected plan and features; please refer to our pricing page for detailed information.
-							</div>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<h2 class="accordion-header">
-							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapseOne">
-								Is it billed monthly or yearly?
-							</button>
-						</h2>
-						<div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordion">
-							<div class="accordion-body">
-								Subscriptions can be billed either monthly or annually, offering flexibility to suit your organization's needs.
-							</div>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<h2 class="accordion-header">
-							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapseOne">
-								Is there a demo before subscription?
-							</button>
-						</h2>
-						<div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordion">
-							<div class="accordion-body">
-								Yes, we offer a demo of OWEB-EMS to provide users with a firsthand experience of its features and functionalities.
-							</div>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<h2 class="accordion-header">
-							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapseOne">
-								Who created OWB-EMS?
-							</button>
-						</h2>
-						<div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordion">
-							<div class="accordion-body">
-								OWEB-EMS was created by our dedicated team of developers and designers, committed to delivering innovative solutions for organizational management.
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-
-		<div class="position-relative m-0">
-			<div class="custom-shape-divider-bottom-1708681138">
-				<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-					<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-				</svg>
-			</div>
-		</div>
-
-		<footer class="m-0 py-3">
-			<div class="nav justify-content-center">
-				<a class="nav-link" aria-current="page" href="#home"><i class="bi-house"></i> Home</a>
-				<a class="nav-link" href="#about"><i class="bi-info-circle"></i> About</a>
-				<a class="nav-link" href="#features"><i class="bi-stars"></i> Features</a>
-				<a class="nav-link" href="#pricing"><i class="bi-tags"></i> Pricing</a>
-				<a class="nav-link" href="#faq"><i class="bi-question-circle"></i> FAQ</a>
-			</div>
-			<div class="text-center text-black">
-				<small>Copyright &copy; 2024 OWEB-EMS &bull; Developed by <a class="text-black" href="https://facebook.com/arjeusman">Luffytaro.</a></small>
-			</div>
-		</footer>
-	</div>
-
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-		crossorigin="anonymous"></script>
+	</footer>
+	<script type="text/javascript" src="app.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>
