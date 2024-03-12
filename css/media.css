@@ -42,6 +42,18 @@
     .hero-single .frame h1 {
         font-size: 30px;
     }
+    .hero-short form {
+        padding: 5px 10px;
+    }
+    .hero-insurance .frame h1 {
+        font-size: 20px;
+    }
+    .hero-insurance .frame p {
+        font-size: 12px;
+    }.hero-insurance .frame a {
+        font-size: 13px;
+        padding: 10px 40px;
+    }
     .banner::before,
     .banner::after {
     display: none;
