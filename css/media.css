@@ -1,0 +1,55 @@
+
+@media only screen and (max-width: 768px){
+	.navbar .nav-item .nav-link {
+		text-align: left;
+	}
+    .navbar .nav-item .hover-dropdown {
+        display: none;
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        padding-left: 10%;
+        background-color: unset;
+    }
+    .navbar .nav-item .hover-dropdown::before {
+        display: none;
+    }
+    .navbar .nav-item .hover-dropdown * {
+        color: rgba(255, 255, 255, 0.6);
+        padding: 4px 0px;
+    }
+    .navbar .nav-item .hover-dropdown *:hover {
+        color: #fff;
+    }
+	.hero .frame img {
+		min-height: 300px;
+		object-fit: cover;
+	}
+	.hero .frame .call-to-action {
+		width: 100%;
+		max-width: 100%;
+		height: 100%;
+		padding: 0px;
+		align-items: center;
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.hero .frame .call-to-action h2 {
+		font-size: 30px;
+		text-align: center;
+		padding: 0px 50px;
+		line-height: 35px;
+	}
+    .hero-single .frame h1 {
+        font-size: 30px;
+    }
+    .banner::before,
+    .banner::after {
+    display: none;
+}
+    .banner h1 {
+        font-size: 40px;
+    }
+    .testimonials:hover {
+        transform: unset;
+    }
+}

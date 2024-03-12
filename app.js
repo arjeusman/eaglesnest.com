@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    
     new Splide('.splide', {
         type: 'loop',
         autoplay: true,
@@ -7,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         arrows: false,
         pagination: false
     }).mount();
+
     new Splide('#location1', {
         type: 'loop',
         autoplay: true,
