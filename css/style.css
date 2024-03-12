@@ -237,7 +237,29 @@ h6 {
 }
 
 .testimonials {
+	cursor: pointer;
+}
+
+.testimonials:hover {
+	transform: scale(1.05);
+	outline-offset: -2px;
+	transition: all linear .3s;
+}
+
+.testimonials.odd {
 	background-color: #ffe3ca;
+}
+
+.testimonials.odd:hover {
+	outline: 2px solid #F3B95F;
+}
+
+.testimonials.even {
+	background-color: #DBE7C9;
+}
+
+.testimonials.even:hover {
+	outline: 2px solid #99BC85;
 }
 
 .testimonials img {
