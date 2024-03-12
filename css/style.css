@@ -228,6 +228,11 @@ img {
 	font-size: 13px;
 }
 
+.hero-location .title {
+	color: #fff;
+	font-size: 50px;
+}
+
 .hero-short {
 	height: 300px;
 	display: flex;
@@ -262,6 +267,8 @@ img {
 	border: none;
 	background-color: transparent;
 }
+
+
 
 .splide__slide img {
   width: 100%;
