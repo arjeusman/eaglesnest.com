@@ -67,7 +67,7 @@
 							</div>
 						</li>
 					</ul>
-					<a href="#" class="btn bg-gradient get-offer p-2 px-4 rounded-0">Get offer <i class="bi-arrow-right"></i></a>
+					<a href="#" class="btn bg-gradient get-offer p-2 px-4 rounded-0" data-bs-toggle="modal" data-bs-target="#modal">Get offer <i class="bi-arrow-right"></i></a>
 				</div>
 			</div>
 		</nav>
@@ -81,21 +81,21 @@
 						<img src="images/slides/Frame-1.jpg" alt="">
 						<div class="frame">
 							<h1>Monthly shared apartments in Manassas, Virginia</h1>
-							<a href="#" class="btn btn-lg bg-gradient get-offer rounded-0">Get offer <i class="bi-arrow-right"></i></a>
+							<a href="#" class="btn btn-lg bg-gradient get-offer rounded-0" data-bs-toggle="modal" data-bs-target="#modal">Get offer <i class="bi-arrow-right"></i></a>
 						</div>
 					</li>
 					<li class="splide__slide hero">
 						<img src="images/slides/Frame-2.jpg" alt="">
 						<div class="frame">
 							<h1>Less paper work, more flexibility. No credit check</h1>
-							<a href="#" class="btn btn-lg bg-gradient get-offer rounded-0">Get offer <i class="bi-arrow-right"></i></a>
+							<a href="#" class="btn btn-lg bg-gradient get-offer rounded-0" data-bs-toggle="modal" data-bs-target="#modal">Get offer <i class="bi-arrow-right"></i></a>
 						</div>
 					</li>
 					<li class="splide__slide hero">
 						<img src="images/slides/Frame-3.jpg" alt="">
 						<div class="frame">
 							<h1>Coliving ready-to-move-in even today</h1>
-							<a href="#" class="btn btn-lg bg-gradient get-offer rounded-0">Get offer <i class="bi-arrow-right"></i></a>
+							<a href="#" class="btn btn-lg bg-gradient get-offer rounded-0" data-bs-toggle="modal" data-bs-target="#modal">Get offer <i class="bi-arrow-right"></i></a>
 						</div>
 					</li>
 				</ul>
@@ -316,7 +316,7 @@
 						<h1 class="fs-3 text-center text-md-start">Need help with the selection?</h1>
 					</div>
 					<div class="col-sm-12 col-md-5 text-center py-3">
-						<a href="#" class="btn btn-dark btn-lg bg-gradient px-5 rounded-0">Fill the form</a>
+						<a href="#" class="btn btn-dark btn-lg bg-gradient px-5 rounded-0" data-bs-toggle="modal" data-bs-target="#modal">Fill the form</a>
 					</div>
 				</div>
 			</div>
@@ -327,7 +327,7 @@
 					<div class="col-sm-12 col-md-8 text-md-center">
 						<h1>Unique perks! Live well, work smart, have fun along the way. We've covered everything!</h1>
 						<p>All members receive unlimited on-demand fitness and monthly credits for entry to 200+ premier studios. Grow your business and expand your network with unlimited access to co-working spaces, as well as invites to networking events and happy hours.</p>
-						<a href="#" class="btn btn-lg btn-warning bg-gradient px-5 rounded-0">Get offer</a>
+						<a href="#" class="btn btn-lg btn-warning bg-gradient px-5 rounded-0" data-bs-toggle="modal" data-bs-target="#modal">Get offer</a>
 					</div>
 				</div>
 			</div>
@@ -444,7 +444,7 @@
 						<p><i class="bi-telephone-fill me-1"></i> 888-300-8804</p>
 						<p><i class="bi-envelope-fill me-1"></i> eaglesnestseniorhomecare@outlook.com</p>
 						<div class="my-3">
-							<a href="#" class="btn btn-lg bg-gradient get-offer rounded-0">Get offer</a>
+							<a href="#" class="btn btn-lg bg-gradient get-offer rounded-0" data-bs-toggle="modal" data-bs-target="#modal">Get offer</a>
 						</div>
 					</div>
 				</div>
@@ -459,6 +459,58 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Modal -->
+	<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-fullscreen">
+			<form method="post" action="" class="modal-content" style="font-size: 14px;">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel">Get offer</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body no-scrollbar">
+					<label for="firstname" class="form-label my-1">First Name</label>
+					<input type="text" id="firstname" name="firstname" class="form-control form-control-lg rounded-0 my-1" required>
+					<label for="lastname" class="form-label my-1">Last Name</label>
+					<input type="text" id="lastname" name="lastname" class="form-control form-control-lg rounded-0 my-1" required>
+					<label for="email" class="form-label my-1">Email Address</label>
+					<input type="text" id="email" name="email" class="form-control form-control-lg rounded-0 my-1" autocomplete="off" required>
+					<label for="phone" class="form-label my-1">Phone Number</label>
+					<input type="number" id="phone" name="phone" class="form-control form-control-lg rounded-0 my-1" autocomplete="off" required>
+					<label for="move_in" class="form-label my-1">Move In</label>
+					<input type="date" id="move_in" name="move_in" class="form-control form-control-lg rounded-0 my-1" required>
+					<label for="move_out" class="form-label my-1">Move Out</label>
+					<input type="date" id="move_out" name="move_out" class="form-control form-control-lg rounded-0 my-1" required>
+					<label for="city" class="form-label my-1">City</label>
+					<fieldset>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="city">
+							<label class="form-check-label" for="city">Manassas</label>
+						</div>
+					</fieldset>
+					<label for="shared_room" class="form-label my-1">*Room</label>
+					<fieldset>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="shared_room">
+							<label class="form-check-label" for="shared_room">Shared Room</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="private_room">
+							<label class="form-check-label" for="private_room">Private Room</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="private_with_suite">
+							<label class="form-check-label" for="private_with_suite">Private with en-suite bath</label>
+						</div>
+					</fieldset>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-lg get-offer rounded-0">Get offer</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
 	<script type="text/javascript">
 		document.addEventListener('DOMContentLoaded', function () {
 

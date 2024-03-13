@@ -16,6 +16,23 @@ body::-webkit-scrollbar-thumb {
   background-color: #0c359e;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.modal-fullscreen {
+	max-width: 25%;
+}
+
+/* utilities */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 img {
 	max-width: 100%;
 }
