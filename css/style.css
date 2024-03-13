@@ -56,12 +56,16 @@ img {
 	text-align: center;
 }
 
-.navbar .nav-item:hover .nav-link {
+.navbar .nav-item .nav-link.active {
 	color: #3ff252;
 }
 
-.navbar .nav-item .nav-link:focus {
+.navbar .nav-item:hover .nav-link {
 	color: #009cdb;
+}
+
+.navbar .nav-item .nav-link:focus {
+	color: #3ff252;
 }
 
 .navbar .nav-item .nav-link.active {
@@ -109,6 +113,11 @@ img {
 	background-color: #060630;
 }
 
+.navbar .nav-item .hover-dropdown *.active {
+	color: #000;
+	background-color: #dedede;
+}
+
 .navbar-toggler {
 	border: none;
 	border-radius: 0;
@@ -146,12 +155,12 @@ img {
 	bottom: 0px;
 	display: flex;
 	flex-flow: column;
-	align-items: start;
-	justify-content: center;
+	align-items: center;
+	justify-content: end;
 	width: 100%;
 	height: 100%;
-	padding: 0px 100px;
-	background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), transparent);
+	padding: 100px 100px;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), transparent);
 }
 
 .hero .frame h1 {
@@ -258,9 +267,10 @@ img {
 
 .location h1 {
 	font-size: 50px;
+	margin: 0px;
 }
 
-.location h2{
+.location h2 {
 	font-size: 24px;
 	font-family: 'Times New Roman', Times, serif;
 }
