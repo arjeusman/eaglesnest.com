@@ -21,27 +21,28 @@
     .navbar .nav-item .hover-dropdown *:hover {
         color: #fff;
     }
-	.hero .frame img {
-		min-height: 300px;
-		object-fit: cover;
-	}
-	.hero .frame .call-to-action {
+
+    .hero {
+        height: 300px;
+    }
+
+	.hero .frame {
 		width: 100%;
 		max-width: 100%;
 		height: 100%;
-		padding: 0px;
+		padding: 0px 20px;
 		align-items: center;
 		background: rgba(0, 0, 0, 0.5);
+        text-align: center;
 	}
-	.hero .frame .call-to-action h2 {
-		font-size: 30px;
-		text-align: center;
-		padding: 0px 50px;
-		line-height: 35px;
-	}
+
+    .hero .frame h1,
     .hero-single .frame h1 {
         font-size: 30px;
+        line-height: 30px;
+        font-weight: 300;
     }
+
     .hero-short form {
         padding: 5px 10px;
     }
@@ -54,10 +55,11 @@
         font-size: 13px;
         padding: 10px 40px;
     }
+
     .banner::before,
     .banner::after {
-    display: none;
-}
+        display: none;
+    }
     .banner h1 {
         font-size: 40px;
     }
