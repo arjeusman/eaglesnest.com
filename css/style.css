@@ -177,7 +177,7 @@ img {
 	width: 100%;
 	height: 100%;
 	padding: 100px 100px;
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), transparent);
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), transparent, transparent);
 }
 
 .hero .frame h1 {
