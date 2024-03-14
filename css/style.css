@@ -190,6 +190,13 @@ img {
 
 .hero-single {
 	position: relative;
+	height: 600px;
+}
+
+.hero-single img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .hero-single .frame {
