@@ -40,7 +40,8 @@
 	}
 
     .hero .frame h1,
-    .hero-single .frame h1 {
+    .hero-single .frame h1,
+    .hero.investment .frame h1 {
         font-size: 30px;
         line-height: 30px;
         font-weight: 300;
