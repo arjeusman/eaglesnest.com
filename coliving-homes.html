@@ -100,47 +100,53 @@
             </div>
         </section>
         <section class="hero-location py-5" style="background-color: #060630;">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h1 class="title text-white">Our Locations</h1>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div id="our-location" class="col-sm-12 splide my-2">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <div class="card rounded-0">
-                                        <img src="images/places/house-1.jpg" alt="" class="card-image">
-                                        <div class="card-body">
-                                            <h1 class="fs-2">Manassas</h1>
-                                            <p class="fs-5 bg-warning bg-opacity-10 p-3">Best co-living spaces in Manassas: affordable prices, free utilities, weekly cleaning, interested-based community. Find your home in Manassas!</p>
-                                            <a href="#" class="btn btn-warning btn-lg bg-gradient rounded-0 w-100" data-bs-toggle="modal" data-bs-target="#modal">Coliving in Manassas</a>
-                                        </div>
+            <div class="container">
+                <div class="row align-items-center mt-4">
+                    <div id="our-location" class="col-sm-12 splide my-2 p-0">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12 py-4">
+                                    <h1 class="title text-white text-center">Our Locations</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <li class="splide__slide">
+                                                <div class="card rounded-0">
+                                                    <img src="images/places/house-1.jpg" alt="" class="card-image">
+                                                    <div class="card-body">
+                                                        <h1 class="fs-2">Manassas</h1>
+                                                        <p class="fs-5 bg-warning bg-opacity-10 p-3">Best co-living spaces in Manassas: affordable prices, free utilities, weekly cleaning, interested-based community. Find your home in Manassas!</p>
+                                                        <a href="#" class="btn btn-warning btn-lg bg-gradient rounded-0 w-100" data-bs-toggle="modal" data-bs-target="#modal">Coliving in Manassas</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="card rounded-0">
+                                                    <img src="images/places/house-2.jpg" alt="" class="card-image">
+                                                    <div class="card-body">
+                                                        <h1 class="fs-2">Manassas</h1>
+                                                        <p class="fs-5 bg-warning bg-opacity-10 p-3">Best co-living spaces in Manassas: affordable prices, free utilities, weekly cleaning, interested-based community. Find your home in Manassas!</p>
+                                                        <a href="#" class="btn btn-warning btn-lg bg-gradient rounded-0 w-100" data-bs-toggle="modal" data-bs-target="#modal">Coliving in Manassas</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="card rounded-0">
+                                                    <img src="images/places/house-3.jpg" alt="" class="card-image">
+                                                    <div class="card-body">
+                                                        <h1 class="fs-2">Manassas</h1>
+                                                        <p class="fs-5 bg-warning bg-opacity-10 p-3">Best co-living spaces in Manassas: affordable prices, free utilities, weekly cleaning, interested-based community. Find your home in Manassas!</p>
+                                                        <a href="#" class="btn btn-warning btn-lg bg-gradient rounded-0 w-100" data-bs-toggle="modal" data-bs-target="#modal">Coliving in Manassas</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <div class="card rounded-0">
-                                        <img src="images/places/house-2.jpg" alt="" class="card-image">
-                                        <div class="card-body">
-                                            <h1 class="fs-2">Manassas</h1>
-                                            <p class="fs-5 bg-warning bg-opacity-10 p-3">Best co-living spaces in Manassas: affordable prices, free utilities, weekly cleaning, interested-based community. Find your home in Manassas!</p>
-                                            <a href="#" class="btn btn-warning btn-lg bg-gradient rounded-0 w-100" data-bs-toggle="modal" data-bs-target="#modal">Coliving in Manassas</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <div class="card rounded-0">
-                                        <img src="images/places/house-3.jpg" alt="" class="card-image">
-                                        <div class="card-body">
-                                            <h1 class="fs-2">Manassas</h1>
-                                            <p class="fs-5 bg-warning bg-opacity-10 p-3">Best co-living spaces in Manassas: affordable prices, free utilities, weekly cleaning, interested-based community. Find your home in Manassas!</p>
-                                            <a href="#" class="btn btn-warning btn-lg bg-gradient rounded-0 w-100" data-bs-toggle="modal" data-bs-target="#modal">Coliving in Manassas</a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -494,8 +500,7 @@
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             new Splide('#our-location', {
-                autoplay: true,
-                interval: 5000,
+                autoplay: false,
                 gap: '25px',
                 pagination: false,
                 perPage: 1,
@@ -506,13 +511,12 @@
                         arrows: true,
                         perPage: 1,
                         fixedWidth: '100%',
-                        padding: '5px'
                     },
                     768: {
                         type: 'slide',
                         arrows: false,
                         perPage: 4,
-                        fixedWidth: '25%',
+                        fixedWidth: '350px',
                     },
                 }
             }).mount();
@@ -534,7 +538,7 @@
                     768: {
                         arrows: false,
                         perPage: 4,
-                        fixedWidth: '25%',
+                        fixedWidth: '350px',
                     },
                 }
             }).mount();
@@ -556,7 +560,7 @@
                     768: {
                         arrows: false,
                         perPage: 4,
-                        fixedWidth: '25%',
+                        fixedWidth: '350px',
                     },
                 }
             }).mount();

@@ -188,7 +188,8 @@ img {
 }
 
 .hero.investment {
-	background-color: #dedede;
+	background: linear-gradient(180deg, #EABE6C, #fff);
+	/* background: #F4EDCC; */
 }
 
 .hero.investment .frame {
