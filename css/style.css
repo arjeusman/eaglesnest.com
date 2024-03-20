@@ -176,7 +176,7 @@ img {
 	width: 100%;
 	height: 100%;
 	padding: 100px 100px;
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), transparent, transparent);
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), transparent, transparent);
 }
 
 .hero .frame h1 {
@@ -188,8 +188,7 @@ img {
 }
 
 .hero.investment {
-	background: linear-gradient(180deg, #EABE6C, #fff);
-	/* background: #F4EDCC; */
+	background: #FFBE98;
 }
 
 .hero.investment .frame {
@@ -229,7 +228,8 @@ img {
 
 .hero-single .frame h1 {
 	color: #fafafa;
-	font-size: 80px;
+	font-size: 70px;
+	text-transform: uppercase;
 	text-shadow: 0px 2px 5px #000;
 }
 
@@ -369,27 +369,11 @@ img {
 	cursor: pointer;
 }
 
-.testimonials.odd {
-	background-color: #ffe3ca;
-}
-
-.testimonials.odd:hover {
-	outline: 2px solid #F3B95F;
-}
-
-.testimonials.even {
-	background-color: #DBE7C9;
-}
-
-.testimonials.even:hover {
-	outline: 2px solid #99BC85;
-}
-
 .testimonials img {
 	width: 100%;
 	max-width: 150px;
 	aspect-ratio: 1/1;
-	border-radius: 100%;
+	border-radius: 10px;
 }
 
 .testimonials h1 {
