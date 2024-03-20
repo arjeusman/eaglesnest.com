@@ -148,6 +148,12 @@ img {
 	border: none;
 }
 
+.get-offer * {
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
 .get-offer:hover {
 	color: #fff;
 	background-color: #009cdb;
